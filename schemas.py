@@ -2,11 +2,13 @@ from fastapi.exceptions import RequestValidationError
 from pydantic import BaseModel ,constr,Field
 from typing import Optional
 from typing import Set
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 class Settings(BaseModel):
-    authjwt_secret_key : str ="eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV"
-
-
+    authjwt_secret_key : str =os.getenv("authjwt_secret_key")
 
 class User(BaseModel):
     username: str

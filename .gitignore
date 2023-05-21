@@ -1,0 +1,10 @@
+# Ignore the .env file
+.env
+
+# Ignore virtual environment
+myenv/
+
+# Ignore temporary Python files
+__pycache__/
+*.pyc
+.pytest_cache/

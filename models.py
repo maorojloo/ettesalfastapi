@@ -41,9 +41,3 @@ class Conference(Base):
         
 Base.metadata.create_all(engine)
 
-# Session = sessionmaker(bind=engine)
-# session = Session()
-
-# Conference = Conference(title=,description=,start_time=,end_time=,Capacity=,items)
-# session.add(Conference)
-# session.commit()
