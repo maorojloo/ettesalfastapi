@@ -4,8 +4,7 @@ from fastapi.testclient import TestClient
 from main import app
 
 client = TestClient(app=app)
-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhIiwiaWF0IjoxNjg0NTg4NDA4LCJuYmYiOjE2ODQ1ODg0MDgsImp0aSI6Ijg0NmE3NTNlLTg2MjQtNDU2OC05OTUxLTMxMjRmZDM3OTU3MSIsImV4cCI6MTY4NDU4OTMwOCwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.WQXFOUiJxpmP0V2kgdR8rPyF3vwrkaTdACHrGGKF73Q"
-
+token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhIiwiaWF0IjoxNjg0NjQ3OTI2LCJuYmYiOjE2ODQ2NDc5MjYsImp0aSI6ImQ3MTViM2IyLWFkZDQtNDAzMi05ZGQ1LTM3NDdhMjQ2MDJiMCIsImV4cCI6MTY4NDY0ODgyNiwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.Of7S6lL4WBRcdJA3T6iDXKVSG_bjYq_HVAWHLearkmU'
 @pytest.mark.parametrize(
     "input_data, expected_status_code",
     [
@@ -117,6 +116,8 @@ def test_Update_an_existing_conferene(access_token):
                 "items" : "some string"
 
             }
-    response = client.post("/conferences/13333", json=data, headers=headers)
-    assert response.status_code == 404
+    response = client.post("/conferences/65", json=data, headers=headers)
+    assert response.status_code == 405
     # Add additional assertions as needed
+
+

@@ -1,4 +1,4 @@
-# this is a document for this progect
+# This is a document for this project
 
 ## Database ERD
 
