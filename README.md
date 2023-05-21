@@ -16,8 +16,8 @@ Also u can run progect and visit [http://127.0.0.1:8000/doc](http://127.0.0.1:80
 2. uvicorn main:app --reload
 
 # Project Structure. Consistent & predictable
-├── folder
-│   ├── schemas.py  # pydantic models
-│   ├── models.py  # db models
-│   ├── main.py 
-│   └── test_main.py #tests
+├── folder <br>
+│   ├── schemas.py  # pydantic models <br>
+│   ├── models.py  # db models <br>
+│   ├── main.py  <br>
+│   └── test_main.py #tests <br>
