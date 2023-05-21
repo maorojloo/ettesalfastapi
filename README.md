@@ -14,3 +14,10 @@ Also u can run progect and visit [http://127.0.0.1:8000/doc](http://127.0.0.1:80
 
 1. pip intall -r req.txt
 2. uvicorn main:app --reload
+
+# Project Structure. Consistent & predictable
+├── folder <br>
+│   ├── schemas.py  # pydantic models <br>
+│   ├── models.py  # db models <br>
+│   ├── main.py  <br>
+│   └── test_main.py #tests <br>
