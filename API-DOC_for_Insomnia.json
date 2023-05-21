@@ -1,0 +1,227 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2023-05-20T12:50:06.821Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_087c788a7b7f44419ae3849c48965920",
+			"created": 1678970507505,
+			"description": "",
+			"modified": 1684567378895,
+			"name": "ettsal",
+			"parentId": "proj_default-project",
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_857c6d6a14cc54ea889b429483e4870c638364ed",
+			"color": null,
+			"created": 1678970507510,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1678970507510,
+			"modified": 1678970507510,
+			"name": "Base Environment",
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_857c6d6a14cc54ea889b429483e4870c638364ed",
+			"cookies": [],
+			"created": 1678970507512,
+			"modified": 1678970507512,
+			"name": "Default Jar",
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_db5f4fa94eb44d14a21bafa76b9591d7",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\"username\":\"a\",\n\"password\":\"a\"\n}"
+			},
+			"created": 1684567431260,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_16d36a8f79844f76ad19b284483518f5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1684567431260,
+			"method": "POST",
+			"modified": 1684585772528,
+			"name": "signup",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/users/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bca01bada3344187b0c2c1d64679e6a5",
+			"authentication": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhIiwiaWF0IjoxNjg0NTY5NTMzLCJuYmYiOjE2ODQ1Njk1MzMsImp0aSI6ImRhM2RiZWYzLWZmYzgtNDc4MS1hM2JhLTQ0MWE3ZTViZTVkOSIsImV4cCI6MTY4NDU3MDQzMywidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.Iu3WmWmERKIi7ULnYbNx80Dycgka5esJPX6xFQHmWGk",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\"username\":\"aa\",\n\"password\":\"aa\"\n}"
+			},
+			"created": 1684567587548,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_20b5fa7cdfa64c388ec5caa4ccd00512",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1684567587548,
+			"method": "POST",
+			"modified": 1684572969045,
+			"name": "login",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/login/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d9ddc7b7017a4b4f9cca5208c3311580",
+			"authentication": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYSIsImlhdCI6MTY4NDU4MTkxMCwibmJmIjoxNjg0NTgxOTEwLCJqdGkiOiJjMTcwYTU1Ny0yNTA3LTRiOGUtYTkxMi03ZWRjNjBjOThlYzEiLCJleHAiOjE2ODQ1ODI4MTAsInR5cGUiOiJhY2Nlc3MiLCJmcmVzaCI6ZmFsc2V9.ZWrfkq_DHa-j-XGtew2M0M-JFUXTZqZc3-__ffRetKM",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n                \"title\" : \"sdfsdfsfsdf\",\n                \"description\" : \"workshop\",\n                \"start_time\" : \"1401/01/15T15:36:18\",\n                \"end_time\" : \"1402/01/15T15:36:18\",\n                \"Capacity\" : 52,\n                \"items\" : \"some string\"\n\n            }"
+			},
+			"created": 1684575785825,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_84b4132bf5b3433e8db98f5920109701",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1684575785825,
+			"method": "POST",
+			"modified": 1684582091433,
+			"name": "create_conference",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/conferences/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b84823ff59f4456785974287c55608bf",
+			"authentication": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYSIsImlhdCI6MTY4NDU4Mzg0NCwibmJmIjoxNjg0NTgzODQ0LCJqdGkiOiJhOTEzODhjNy05YzAyLTQyN2MtYjg5Ni0wMTY0Y2MzYjk3NDIiLCJleHAiOjE2ODQ1ODQ3NDQsInR5cGUiOiJhY2Nlc3MiLCJmcmVzaCI6ZmFsc2V9.fTTtNuNpOrRNtofDND39mvn2pMpsSQuf-XlJBOqP3Qo",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1684577071129,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1684577071129,
+			"method": "GET",
+			"modified": 1684583865947,
+			"name": "Get_all_conferences",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/conferences/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0a0e52f841684039aa0456453e339d9c",
+			"authentication": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYSIsImlhdCI6MTY4NDU4NjM0MCwibmJmIjoxNjg0NTg2MzQwLCJqdGkiOiI4ZDExNDdhYi1lZDg2LTQ4M2MtOWIyMS1iMjZhNWVjODI4MmEiLCJleHAiOjE2ODQ1ODcyNDAsInR5cGUiOiJhY2Nlc3MiLCJmcmVzaCI6ZmFsc2V9.J6vcltLtAj67HvIm-9V1j9aGhhv7S0XTlmu4hsMOJrE",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\"title\" : \"youuuuuuuuuu\",\n\"description\" : \"workshop\",\n\"start_time\" : \"1401/01/15T15:36:18\",\n\"end_time\" : \"1402/01/15T15:36:18\",\n\"Capacity\" : 52,\n\"items\" : \"some string\"\n\n}"
+			},
+			"created": 1684578374930,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_522adebdb5ec44638c01f3832730408c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1684578374930,
+			"method": "PUT",
+			"modified": 1684586598092,
+			"name": "Update_an_existing_conference",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/conferences/13333",
+			"_type": "request"
+		},
+		{
+			"_id": "req_202b7f3503484e4fb74bdbdba2b45ec8",
+			"authentication": {
+				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYSIsImlhdCI6MTY4NDU4Mzg0NCwibmJmIjoxNjg0NTgzODQ0LCJqdGkiOiJhOTEzODhjNy05YzAyLTQyN2MtYjg5Ni0wMTY0Y2MzYjk3NDIiLCJleHAiOjE2ODQ1ODQ3NDQsInR5cGUiOiJhY2Nlc3MiLCJmcmVzaCI6ZmFsc2V9.fTTtNuNpOrRNtofDND39mvn2pMpsSQuf-XlJBOqP3Qo",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1684579575746,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1684579575746,
+			"method": "DELETE",
+			"modified": 1684584025887,
+			"name": "delete_an_existing_conference",
+			"parameters": [],
+			"parentId": "wrk_087c788a7b7f44419ae3849c48965920",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8000/conferences/17",
+			"_type": "request"
+		}
+	]
+}

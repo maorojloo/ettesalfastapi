@@ -27,7 +27,7 @@ async def validation_exception_handler(request, exc):
 def get_config():
     return Settings()
 
-@app.post('/users/')
+@app.post('/users/', response_model=User)
 def create_user(user:User):
     query = session.query(Usermodel).filter(Usermodel.username==user.username)
     result = query.first()
@@ -137,7 +137,7 @@ def   Update_an_existing_conference(conference:Conference,conference_id:int,Auth
         return Response(content="Conference not found", status_code=404)
 
 
-@app.delete('/conferences/{conference_id}')
+@app.delete('/conferences/{conference_id}',status_code=204)
 def delete_an_existing_conference(conference_id:int,Authorize:AuthJWT=Depends()):
     try:
         Authorize.jwt_required()
@@ -149,8 +149,8 @@ def delete_an_existing_conference(conference_id:int,Authorize:AuthJWT=Depends())
     if (result):
         session.delete(result)
         session.commit()
-        # return Response(content="Conference deleted", status_code=204)
-        background_tasks.add_task(send_notification, include_content())
+        return Response(content="Conference deleted", status_code=204)
+        #background_tasks.add_task(send_notification, include_content())
     else:
         return Response(content="Conference not found", status_code=404)
 
@@ -160,5 +160,5 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
-#uvicorn main:app --reload
+
 
