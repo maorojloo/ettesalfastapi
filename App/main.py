@@ -18,6 +18,7 @@ dbengine = engine
 Session = sessionmaker(bind=dbengine)
 session = Session()
 
+# To customize validation error response
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, exc):
     return Response(content="Invalid input", status_code=400)
@@ -155,7 +156,7 @@ def delete_an_existing_conference(conference_id:int,Authorize:AuthJWT=Depends())
         return Response(content="Conference not found", status_code=404)
 
 
-
+#UVICORN configuration
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

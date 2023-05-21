@@ -22,7 +22,7 @@ class User(BaseModel):
             }
         }
 
-datetimeValidation = '\d{4}\/\d{2}\/\d{2}T\d{2}:\d{2}:\d{2}'
+datetimeValidation = '\d{4}\/\d{2}\/\d{2}T\d{2}:\d{2}:\d{2}'# time validation format YYYY/MM/DDTHH:MM:SS
 class Conference(BaseModel):
     id : Optional[int]= Field(read_only=True, allow_blank=True)
     title : str
